@@ -1,0 +1,80 @@
+/* Define a fonte e a cor padrão para o corpo do documento */
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #333333; /* Cor do texto */
+}
+
+/* Estiliza o elemento <h1> com sublinhado e itálico */
+h1 {
+    text-decoration: underline; /* Sublinha o texto */
+    font-style: italic; /* Torna o texto itálico */
+}
+
+/* Estiliza o elemento <h2> com uma fonte serifada e negrito */
+h2 {
+    font-family: 'Times New Roman', Times, serif; /* Define a fonte serifada */
+    font-weight: bold; /* Torna o texto em negrito */
+}
+
+/* Estiliza o elemento <header> com um fundo azul claro e borda azul */
+header {
+    background-color: cornflowerblue; /* Cor de fundo */
+    border: 2px solid blue; /* Borda azul de 2px */
+    transition: border-radius 0.3s; /* Transição suave para o arredondamento das bordas */
+    text-align: center; /* Centraliza o texto dentro do header */
+}
+
+/* Adiciona arredondamento suave às bordas do <header> quando o mouse está sobre ele */
+header:hover {
+    border-radius: 20px; /* Define o raio do arredondamento das bordas */
+}
+
+/* Estiliza todos os elementos <h1> a <h6> dentro do <header> */
+header h1, header h2, header h3, header h4, header h5, header h6 {
+    transition: transform 0.2s; /* Adiciona uma transição suave para a transformação */
+}
+
+/* Aumenta o tamanho do texto quando o mouse está sobre qualquer <h1> a <h6> dentro do <header> */
+header h1:hover, header h2:hover, header h3:hover, header h4:hover, header h5:hover, header h6:hover {
+    transform: scale(1.5); /* Aumenta o tamanho do texto para o dobro do tamanho original */
+}
+
+nav {
+    background-color: #f8f8f8;
+    border: solid 2px red;
+    border-style: inset;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 0;
+    margin: 0; /* Adiciona margem zero para evitar espaço extra ao redor do UL */
+    
+}
+
+li {
+    list-style: none;
+    width: 20%;   
+}
+
+a{
+color: #333333; /* Cor da fonte para garantir boa visibilidade em fundo escuro */
+font-size: 16px; /* Tamanho da fonte */
+text-decoration: none; /* Remove o sublinhado dos links */
+display: block; /* Faz o link ocupar o bloco completo do item da lista */
+padding: 10px 0; /* Adiciona algum padding para melhorar a aparência */
+font-weight: bold;
+}
+
+a:hover {
+    color: #FF5733; /* Nova cor do texto ao passar o mouse (um tom de laranja, por exemplo) */
+    font-size: 18px; /* Tamanho da fonte ao passar o mouse */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    display: block;
+    padding: 10px 0; /* Adiciona algum padding para melhorar a aparência */
+    font-weight: bold; /* Mantém a fonte em negrito */
+    transition: color 0.3s, font-size 0.3s; /* Adiciona uma transição suave para a mudança de cor e tamanho */
+}
